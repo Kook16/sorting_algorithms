@@ -30,5 +30,6 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void swap(int *array, size_t lb, size_t ub);
 void counting_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
 
 #endif
