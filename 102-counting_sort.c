@@ -29,10 +29,10 @@ void counting_sort(int *array, size_t size)
 		counting_array[array[i]]++;
 	for (i = 1; i <= k; i++)
 		counting_array[i] += counting_array[i - 1];
+	print_array(counting_array, k + 1);
 	b_array = (int *)malloc(size * sizeof(int));
 	for (i = (int)size - 1; i >= 0; i--)
 		b_array[--counting_array[array[i]]] = array[i];
-	print_array(counting_array, k + 1);
 	for (i = 0; i < (int)size; i++)
 		array[i] = b_array[i];
 	free(counting_array);
