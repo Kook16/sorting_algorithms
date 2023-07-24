@@ -12,6 +12,8 @@ void radix_sort(int *array, size_t size)
 {
 	int max, i, pass;
 
+	if (array == NULL || size <= 1)
+		return;
 	max = array[0];
 	for (i = 1; i < (int)size; i++)
 	{
@@ -23,7 +25,7 @@ void radix_sort(int *array, size_t size)
 }
 
 /**
- * counting_sort - implementing the counting sort algorithm
+ * counting_sort_radix - implementing the counting sort algorithm
  * @array: A pointer to the array
  * @size: size of the array
  * @pos: position of a digit in a number
