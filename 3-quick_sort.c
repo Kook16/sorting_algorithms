@@ -5,7 +5,7 @@ int lomuto_partition(int *array, int low, int high, size_t size);
 void swap(int *a, int *b);
 
 /**
- * quic_sort - sorts an array of integers using quick sort
+ * quick_sort - sorts an array of integers using quick sort
  * @array: Array to be sorted
  * @size: size of the array
  */
@@ -18,7 +18,7 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * qsort - recursive function to perform quicksort
+ * q_sort - recursive function to perform quicksort
  * @array: array to be sorted
  * @low: Starting index of the partion
  * @high: ending index of partition
